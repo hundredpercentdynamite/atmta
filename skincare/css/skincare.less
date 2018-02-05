@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Century-Gothic';
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic_gdi.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic_gdi.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic_gdi.ttf") format("truetype"), url("../fonts/CenturyGothic/CenturyGothic_gdi.svg#CenturyGothic-Regular") format("svg");
+  unicode-range: U+0020-F002;
+}
+
+@font-face {
+  font-family: 'Century Gothic Cy';
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/centurygothicpro_cy.eot");
+  src: url("../fonts/CenturyGothic/centurygothicpro_cy.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/centurygothicpro_cy.woff") format("woff"), url("../fonts/CenturyGothic/centurygothicpro_cy.ttf") format("truetype"), url("../fonts/CenturyGothic/centurygothicpro_cy.svg#CenturyGothic-Regular") format("svg");
+  unicode-range: U+0020-F002;
+}
+
+.main-wrapper {
+  background-color: #FFFFFF;
+}
+
+.skincare {
+  font-family: 'Century Gothic Cy', sans-serif;
+  font-size: medium;
+}
+
+.feature-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+.mobile-hidden {
+  display: inline-block;
+}
+
+.wide-side {
+  flex-basis: 64%;
+}
+
+.narrow-side {
+  flex-basis: 32%;
+}
+
+.feature {
+  max-width: 870px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5;
+  .feature-heading {
+    margin-bottom: 15px;
+    font-size: 3.4ex;
+    line-height: 2ex;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .feature-parag-heading {
+    margin-bottom: 0;
+    margin-top: 23px;
+    font-size: 1.55ex;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.55ex;
+  }
+  img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+}
+
+.natural {
+  .narrow-side {
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.labs {
+  .wide-side {
+    .img-to-right {
+      text-align: right;
+    }
+    img:last-child {
+      margin-top: 34px;
+    }
+  }
+}
+
+.ultra {
+  .narrow-side {
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.ecology {
+  .wide-side {
+    img {
+      width: 569px;
+    }
+  }
+  .narrow-side {
+    .feature-parag-heading:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .fragrance {
+    font-size: large;
+  }
+
+  .desktop-hidden {
+    display: inline-block;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .feature-flex-container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feature {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    p {
+      font-size: 2ex;
+    }
+    .feature-parag-heading {
+      font-size: 1.7ex;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+
+  .wide-side {
+    flex-basis: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .narrow-side {
+    flex-basis: 100%;
+  }
+
+  .natural {
+    .wide-side {
+      margin-bottom: 34px;
+      order: 1;
+      p {
+        margin-bottom: 35px;
+      }
+    }
+    .narrow-side {
+      order: 2;
+    }
+  }
+
+  .labs {
+    .wide-side {
+      img {
+        margin-top: 35px;
+      }
+      .img-to-right {
+        img:last-child {
+          max-width: 267px;
+        }
+      }
+    }
+  }
+
+  .ecology {
+    .wide-side {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .ultra {
+    .wide-side {
+      margin-bottom: 34px;
+      order: 1;
+      p {
+        margin-bottom: 35px;
+      }
+    }
+    .narrow-side {
+      order: 2;
+    }
+  }
+  .ecology {
+    .wide-side {
+      order: 2;
+    }
+    .narrow-side {
+      order: 1;
+      p {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .feature {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .natural {
+    .wide-side {
+      margin-bottom: 20px;
+    }
+  }
+  .ultra {
+    .wide-side {
+      margin-bottom: 20px;
+    }
+  }
+  .labs {
+    .wide-side {
+      img:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
+}
