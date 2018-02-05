@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Century-Gothic';
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic_gdi.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic_gdi.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic_gdi.ttf") format("truetype"), url("../fonts/CenturyGothic/CenturyGothic_gdi.svg#CenturyGothic-Regular") format("svg");
+  unicode-range: U+0020-F002;
+}
+@font-face {
+  font-family: 'Century Gothic Cy';
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/centurygothicpro_cy.eot");
+  src: url("../fonts/CenturyGothic/centurygothicpro_cy.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/centurygothicpro_cy.woff") format("woff"), url("../fonts/CenturyGothic/centurygothicpro_cy.ttf") format("truetype"), url("../fonts/CenturyGothic/centurygothicpro_cy.svg#CenturyGothic-Regular") format("svg");
+  unicode-range: U+0020-F002;
+}
+.main-wrapper {
+  background-color: #FFFFFF;
+}
+.makeup {
+  font-family: 'Century Gothic Cy', sans-serif;
+  font-size: medium;
+}
+.desktop-hidden {
+  display: none;
+}
+.mobile-hidden {
+  display: inline-block;
+}
+.wide-side {
+  flex-basis: 64%;
+}
+.narrow-side {
+  flex-basis: 33%;
+}
+.get-full-width {
+  width: 100%;
+}
+.feature-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.feature {
+  max-width: 870px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.feature .feature-heading {
+  margin-bottom: 15px;
+  font-size: 3.4ex;
+  line-height: 2ex;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.feature .feature-parag-heading {
+  margin-bottom: 0;
+  margin-top: 23px;
+  font-size: 1.55ex;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.feature p {
+  font-size: 1.65ex;
+}
+.feature p q {
+  text-transform: uppercase;
+}
+.feature img {
+  max-width: 100%;
+  overflow: hidden;
+}
+.makeup-anchor {
+  margin-top: 19px;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.5ex;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #000000;
+}
+.expertise .narrow-side p {
+  margin-bottom: 27px;
+}
+.expertise .wide-side .img-flex-container {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.expertise .wide-side .img-flex-container div:first-child {
+  padding-right: 24px;
+}
+.heart .wide-side {
+  text-align: right;
+}
+.heart .wide-side img:last-child {
+  margin-top: 24px;
+}
+.heart .narrow-side p {
+  margin-bottom: 27px;
+}
+@media screen and (max-width: 640px) {
+  .fragrance {
+    font-size: large;
+  }
+  .desktop-hidden {
+    display: inline-block;
+  }
+  .mobile-hidden {
+    display: none !important;
+  }
+  .feature-flex-container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: stretch;
+  }
+  .feature {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .feature p {
+    font-size: 2ex;
+  }
+  .feature .feature-parag-heading {
+    font-size: 1.7ex;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .makeup-anchor {
+    font-size: 1.7ex;
+    padding: 22px 0;
+  }
+  .wide-side {
+    flex-basis: 100%;
+  }
+  .wide-side img {
+    width: 100%;
+  }
+  .narrow-side {
+    flex-basis: 100%;
+  }
+  .get-full-width {
+    width: auto;
+  }
+  .makeup .narrow-side p {
+    margin-bottom: 20px;
+  }
+  .expertise .narrow-side {
+    padding-top: 24px;
+    align-self: flex-end;
+    order: 2;
+    width: 47.5%;
+  }
+  .expertise .narrow-side img {
+    width: 100%;
+  }
+  .expertise .wide-side {
+    order: 1;
+  }
+  .expertise .wide-side p {
+    margin-bottom: 20px;
+  }
+  .expertise a {
+    order: 3;
+  }
+  .expertise .img-flex-container div {
+    width: 47.5%;
+  }
+  .heart .wide-side {
+    text-align: left;
+  }
+  .heart .wide-side p {
+    margin-bottom: 20px;
+  }
+  .heart .narrow-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .heart .narrow-side img {
+    width: 47.5%;
+    padding-top: 23px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feature {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .expertise .narrow-side {
+    width: 46.5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .expertise .narrow-side {
+    width: 46%;
+  }
+}

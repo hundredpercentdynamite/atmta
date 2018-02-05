@@ -1,0 +1,352 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.container {
+  background-color: #000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.steps {
+  text-align: center;
+  color: #eb0299;
+  //font-size: 25px;
+  font-size: 2.5ex;
+  letter-spacing: -0.035em;
+  border-bottom: 1px solid #eb0299;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+  .heading {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding-bottom: 207px;
+    background: url(../img/sale-bg.jpg) no-repeat bottom;
+    background-size: contain;
+    .big-sale {
+      position: relative;
+      //font-size: 186px;
+      font-size: 13ex;
+      font-weight: 200;
+      line-height: 186px;
+    }
+    .big-sale::before{
+      position: absolute;
+      content: "до";
+      display: block;
+      //font-size: 25px;
+      font-size: .25ex;
+      left: 12px;
+    }
+  }//heading
+  ol {
+    list-style-type: none;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  li::before {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    font-size: 1.5ex;
+    color: #eb0299;
+    text-align: center;
+    border: 2px solid #eb0299;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: 5px;
+  }
+  li:nth-child(1)::before {
+    content: "1";
+  }
+  li:nth-child(2)::before {
+    content: "2";
+  }
+  li:nth-child(3)::before {
+    content: "3";
+  }
+}
+
+.gold-card {
+  text-align: center;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #eb0299;
+  margin-bottom: 40px;
+  h2 {
+    //font-size: 30px;
+    font-size: 3.2ex;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  img {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  input {
+    width: 380px;
+    padding: 20px;
+    padding-top: 21px;
+    padding-bottom: 19px;
+    margin-bottom: 20px;
+    background-color: #000;
+    border: 1px solid #d1d1d1;
+    color: #fff;
+    font-size: 3ex;
+  }
+  input::placeholder {
+    font-size: 2.5ex;
+    color: #3e3e3e;
+    font-style: italic;
+    font-weight: 200;
+  }
+  input::-moz-placeholder {
+    font-size: 2.5ex;
+    color: #3e3e3e;
+    font-style: italic;
+    font-weight: 200;
+  }
+  .card-parag {
+    //font-size: 26px;
+    font-size: 2.8ex;
+    color: #eb0299;
+    margin-bottom: 55px;
+  }
+  .pink-brush-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 3.5ex;
+    background: url(../img/pink-brush.jpg) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.healthy-skin {
+  position: relative;
+  text-align: center;
+  .novelty {
+    font-size: 8ex;
+    font-weight: 600;
+    color: #eb0299;
+    letter-spacing: -0.035em;
+  }
+
+  h2 {
+    font-size: 3ex;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .buy-button {
+    position: absolute;
+    top: 1010px;
+    right: 160px;
+    color: #fff;
+    font-size: 24px;
+    background-color: #ea0095;
+    width: 140px;
+  }
+  .buy-button::before {
+    display: block;
+    position: absolute;
+    content: "от 704 ₽";
+    top: -40px;
+    left: 15px;
+  }
+  .healthy-skin-reference {
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    h3 {
+      font-size: 3.1ex;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 2ex;
+      text-transform: none;
+      padding-bottom: 50px;
+    }
+  }
+  .healthy-skin-reference:nth-child(3) {
+    padding-top: 480px;
+    background: url(../img/healthy-skin-bg.jpg) no-repeat;
+    background-size: contain;
+    p, h3 {
+      max-width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .healthy-skin {
+    .buy-button {
+      top: 850px;
+      right: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .healthy-skin {
+    .buy-button {
+      top: 720px;
+      right: 85px;
+    }
+  }
+  body {
+    font-size: medium;
+  }
+  .steps {
+    li::before {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .healthy-skin {
+    .healthy-skin-reference:nth-child(3) {
+      padding-top: 380px;
+     p {
+       max-width: 100%;
+     }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gold-card {
+    input {
+      width: 350px;
+    }
+  }
+  .steps {
+    li::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .healthy-skin {
+    .buy-button {
+      top: 640px;
+      right: 75px;
+    }
+    .healthy-skin-reference {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .healthy-skin-reference:nth-child(3) {
+      padding-top: 300px;
+      p {
+        max-width: 100%;
+      }
+    }//healthy-skin-reference:nth-child(3)
+  }//healthy-skin
+  body {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    max-width: 70%;
+  }
+  .steps {
+    .heading {
+      padding-bottom: 107px;
+    }
+
+    li::before {
+      width: 20px;
+      height: 20px;
+    }
+  }//steps
+
+  .gold-card {
+    input {
+      width: 250px;
+      padding: 10px;
+    }
+    input::placeholder {
+      font-size: 2ex;
+    }
+  }//gold-card
+  .healthy-skin {
+    .buy-button {
+      top: 530px;
+      right: 35px;
+    }
+    .healthy-skin-reference:nth-child(3) {
+      padding-top: 250px;
+    }
+  }//healthy-skin
+  body {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    max-width: 80%;
+  }
+  .steps {
+    li::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .gold-card {
+    input {
+      width: 200px;
+      padding: 10px;
+    }
+    input::placeholder {
+      font-size: 2ex;
+    }
+    .pink-brush-bg {
+      font-size: 2.9ex;
+    }
+  }//gold-card
+
+  .healthy-skin {
+    .healthy-skin-reference:nth-child(3) {
+      padding-top: 200px;
+    }
+    .healthy-skin-reference {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .buy-button {
+      top: 470px;
+      right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .healthy-skin {
+    .buy-button {
+      top: 410px;
+      font-size: 20px;
+      width: 100px;
+    }
+    .healthy-skin-reference:nth-child(3) {
+      padding-top: 150px;
+    }
+
+  }
+
+}
