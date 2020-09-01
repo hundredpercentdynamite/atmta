@@ -4,7 +4,7 @@ Some old stuff
 Also, i made this:
 
 hybris
-http://www.new.rivoli.ru
+http://www.rivoli.ru
 
 opencart
 https://lema-russia.ru
